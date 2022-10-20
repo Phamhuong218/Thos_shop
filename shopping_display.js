@@ -62,4 +62,23 @@ function oldColor(event) {
  $shopBag.classList.remove('color-changed')
 }
 
+// Add product in shopping bag
+let $itemNumber = document.getElementsByClassName('item-number')
+console.log($itemNumber);
+let $addBtn = document.getElementsByClassName('add-btn')
+let $addBtn2 = document.getElementsByClassName('add-btn2')
+function addItemsInBag(){
+   let x = $itemNumber[0].innerHTML
+   $itemNumber[0].innerHTML = Number(x) + 1
+   $itemNumber[1].innerHTML = $itemNumber[0].innerHTML
+   $itemNumber[2].innerHTML = $itemNumber[0].innerHTML
 
+
+// Change button content when click to add items
+   $addBtn[0].classList.add('disappeared')
+   $addBtn2[0].classList.remove('disappeared')
+   setTimeout (function(){
+      $addBtn[0].classList.remove('disappeared')
+      $addBtn2[0].classList.add('disappeared')
+   },2000)
+}

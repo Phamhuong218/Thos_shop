@@ -64,9 +64,12 @@ img{
 .shopbag.color-changed ion-icon {
   color: var(--darkblue);
 }
+.shopbag.shopbag.color-changed span {
+  color: var(--darkblue)
+}
 .shopbag {
   width: 150px;
-  margin: 0 auto; 
+  margin: 50px auto; 
   display: flex;
   flex-direction: column;
   align-items: center

@@ -15,7 +15,6 @@
     font-family: Open Sans;
     font-size: 18px;
     color: var(--darkgrey);
-    border: 1px solid
   }
 /* Code for shop.html */
 .shopbag {
@@ -33,6 +32,9 @@
 }
 .shopbag.color-changed ion-icon {
   color: var(--darkblue);
+}
+.shopbag.shopbag.color-changed span {
+  color: var(--darkblue)
 }
 .shopbag {
   width: 150px;
@@ -61,7 +63,7 @@
 }
 .container1 .right .price {
   font-size: 1.3rem;
-  font-weight: 4000;
+  font-weight: 400;
   margin: 30px 0
 }
 .container1 .right b{
@@ -78,6 +80,12 @@
   border: 1px solid grey;
   margin-bottom: 10px
 }
+.container1 .split .right .add-btn.disappeared {
+  display: none
+}
+.container1 .split .right .add-btn2.disappeared {
+  display: none
+}
 .container1 .right .shopping-bag-page {
   display: block;
   padding: 15px;
@@ -91,22 +99,32 @@
 .container1 .right .shopping-bag-page:hover {
   opacity: 70%;
 }
-@media only screen and (min-width: 400px) {
+.container1 .split .right .shop-page:hover {
+  color: var(--darkblue)
+}
+.container1 .split .right button:hover {
+    background: rgb(236, 235, 235)
+}
+@media only screen and (min-width: 800px) {
     .container1 .split {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 40px;
+        grid-template-columns: auto 400px;
         margin: 50px 20px
     }
-    .container1 .split .left img {
-        width: calc(100vw - 500px)
+    .container1 .split .left {
+        width: calc(100%)
     }
 }
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .container1 .split {
+    width: 400px;
     margin: 0 auto
   }
-} */
+  .container1 .split .left {
+    width: calc(100%)
+  }
+  
+}
 
 
 /* Header */

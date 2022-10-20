@@ -35,7 +35,7 @@
       </div>
       <div class="shopping-bag">
         <ion-icon class="icon-cart" name="bag-outline"></ion-icon>
-        <p>Shopping bag (0)</p>
+        <p>Shopping bag (<span class="item-number">0</span>)</p>
       </div>
     </div>
 </div>
@@ -44,20 +44,24 @@
   <h1 class="title-font">Shop</h1>
   <div class="shopbag" onmouseover="changeColor()" onmouseout="oldColor()" id="shop-bag">
     <ion-icon class="icon-cart" name="bag-outline"></ion-icon>
-    <a href="#">Shopping bag (0)</a>
+    <a href="#">Shopping bag (<span class="item-number">0</span>)</a>
   </div>
 
   <div class="split">
-    <img class ="left" src="https://d2j6dbq0eux0bg.cloudfront.net/images/35322367/1605409712.jpg"  alt="" >
+    <a href="./shop.html">
+      <img class ="left" src="https://d2j6dbq0eux0bg.cloudfront.net/images/35322367/1605409712.jpg"  alt="" >
+    </a>
     <div class="right">
       <h3 class="title-font">The best of Thor</h3>
       <a class = "shop-page" href="./shop.html">Back to catalog</a>
       <p class ="price">$49.00</p>
-      <b><span>0</span> items in the bag</b>
-      <button>Add More</button>
+      <b><span class="item-number">0</span> items in the bag</b>
+      <button onclick="addItemsInBag()" class="add-btn">Add More</button>
+      <button onclick="addItemsInBag()"class="add-btn2 disappeared">
+        <ion-icon name="checkmark-outline"></ion-icon>
+      
+      </button>
       <a class="shopping-bag-page" href="">Go to Checkout</a>
-      <!-- <a class="best" href="./shopping_display.html">The best of Thos</a>
-       -->
     </div>
    </div> 
 
